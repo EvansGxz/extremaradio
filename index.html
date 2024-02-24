@@ -22,7 +22,8 @@
         justify-content: center;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 80%;
+            margin: 0 auto;
       }
 
       h1 {
@@ -31,7 +32,7 @@
 
       #radio-player {
         width: 600px;
-        margin-top: 20px;
+        margin-top: 4ren;
         background-color: #ccc;
         border: 1px solid #ccc;
         border-radius: 5px;
@@ -69,6 +70,26 @@
         width: 80%;
         margin-bottom: 10px;
       }
+
+       /* Media Query for Mobile Devices */
+       @media only screen and (max-width: 600px) {
+            body {
+                background-color: rgba(0, 0, 0, 0.9); /* Darker overlay for small screens */
+            }
+
+            .container {
+                width: 100%; /* Full width for small screens */
+                padding: 10px; /* Add some padding for better readability */
+            }
+
+            #radio-player {
+                margin-top: 20px; /* Adjust the margin for small screens */
+            }
+
+            #user-count {
+                margin-top: 10px; /* Adjust the margin for small screens */
+            }
+        }
     </style>
   </head>
   <body>
